@@ -44,35 +44,8 @@ li {
     list-style: none;
 }
 
-.inline {
-    display: inline-block;
-}
-
-.block {
-    display: block;
-}
-
 .rounded {
     border-radius: 25px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-}
-
-.left {
-    float: left;
-}
-.right {
-    float: right;
 }
 
 button {
