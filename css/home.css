@@ -1,0 +1,31 @@
+/*---------------------- HOME PAGE ----------------------*/
+
+.bg {
+    position: absolute;
+    opacity: .4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.home-section div {
+    width: 100%;
+    position: absolute;
+    /* Centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-section h1 {
+    font-size: 4rem;
+    font-style: italic;
+    margin: 32px 0;
+}
+
+.home-section p {
+    font-size: 3rem;
+    margin: 32px 0;
+}

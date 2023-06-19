@@ -1,0 +1,16 @@
+/*---------------------- LOCATION PAGE ----------------------*/
+
+.location-section {
+    width: 100%;
+}
+
+.location-section iframe {
+    width: 50%;
+}
+
+.location-data {
+    /* TODO: CENTER TEXT IN MIDDLE OF DIV */
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}

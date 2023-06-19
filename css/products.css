@@ -1,0 +1,22 @@
+/*---------------------- PRODUCTS PAGE ----------------------*/
+
+.products-section {
+    height: 80vh;
+    
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    border: #75201b 3px solid;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 25px;
+    background-color: var(--secondary-button);
+    color: var(--secondary);
+}
+
+.card img {
+    margin: 0 0 15px 0;
+}
+

@@ -1,0 +1,29 @@
+/* ---------------------- TRAJECTORY PAGE ----------------------*/
+
+.container-trajectory {
+    margin: 50px;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+    color: var(--secondary);
+}
+
+.circle-date-trajectory {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.rectangle-data-trajectory {
+    width: 80%;
+    height: 100px;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.rectangle-data-trajectory p {
+    width: 95%;
+}

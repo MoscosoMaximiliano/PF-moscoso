@@ -1,0 +1,32 @@
+/*---------------------- CONTACT PAGE ----------------------*/
+
+input, textarea, select{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin: 15px 0 25px 0;
+    resize: none;
+    outline: none;
+    font-family: "Pangolin";
+    font-size: 16px;
+    color: var(--secondary);
+    background-color: var(--accent);
+}
+
+form {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    padding: 55px;
+    /* Centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+form button {
+    background-color: var(--primary-button);
+    color: var(--secondary);
+}

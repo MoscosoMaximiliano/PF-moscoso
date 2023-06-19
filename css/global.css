@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root {
+    --primary: #fe875b;
+    --secondary: #feebda;
+    --primary-button: #75201b;
+    --secondary-button: #ff9567;
+    --accent: #ab432b;
+}
+
+/*---------------------- GENERAL ----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0 10% 0 10%;
+    font-family: "Pangolin";
+    background-color: var(--secondary);
+    height: 100%;
+}
+
+main {
+    height: 80vh;
+    color: var(--primary);
+    justify-content: center;
+    position: relative;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--secondary);
+}
+
+li {
+    list-style: none;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+button {
+    font-family: "Pangolin";
+    border: none;
+    background-color: var(--secondary-button);
+    color: var(--accent);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 10px;
+}
+
+
+/*---------------------- NAVBAR ----------------------*/
+
+header nav {
+    width: 100%;
+    margin: 30px;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--secondary-button);
+}
+
+/*---------------------- FOOTER ----------------------*/
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-button);
+    color: var(--secondary);
+}
+
+footer div{
+    margin: 0px 100px;
+}
+
+.social-media-logo {
+    fill: var(--secondary);
+    width: 35px;
+    height: 36px;
+    padding: 2px 2px;
+}
