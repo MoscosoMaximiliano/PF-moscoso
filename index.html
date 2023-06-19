@@ -10,40 +10,48 @@
 </head>
 
 <body>
-  <!-- header -->
   <header>
-    <!-- navbar -->
-    <nav>
-      <ul>
-        <li class="rounded "><a href="#">Home</a></li>
-        <li class="rounded ">
-          <a href="./pages/trajectory.html">Trajectory</a>
-        </li>
-        <li class="rounded ">
-          <a href="./pages/products.html">Products</a>
-        </li>
-        <li class="rounded ">
-          <a href="./pages/location.html">Location</a>
-        </li>
-        <li class="rounded ">
-          <a href="./pages/contact.html">Contact</a>
-        </li>
+    <div class="header-content">
+      <nav class="navbar" id="navbar">
+        <ul class="nav-container">
+          <li class="rounded nav-item"><a href="#">Home</a></li>
+          <li class="rounded nav-item">
+            <a href="./pages/trajectory.html">Trajectory</a>
+          </li>
+          <li class="rounded nav-item">
+            <a href="./pages/products.html">Products</a>
+          </li>
+          <li class="rounded nav-item">
+            <a href="./pages/location.html">Location</a>
+          </li>
+          <li class="rounded nav-item">
+            <a href="./pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-
-      </ul>
-    </nav>
+      <div id="hamburger" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
   </header>
-
 
   <!-- main -->
   <main>
-    <section class="home-section ">
+    <section class="home-section">
       <div>
         <h1>Charlotte</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora optio cupiditate necessitatibus quis
-          ducimus magni beatae maxime cumque repellendus! Recusandae, adipisci amet officiis minima illo quibusdam
-          obcaecati unde quas sit.</p>
-        <a href="./pages/contact.html"><button class=" rounded">Contact with us!</button></a>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+          optio cupiditate necessitatibus quis ducimus magni beatae maxime
+          cumque repellendus! Recusandae, adipisci amet officiis minima illo
+          quibusdam obcaecati unde quas sit.
+        </p>
+        <button class="rounded">
+          <a href="./pages/contact.html">Contact with us!</a>
+        </button>
       </div>
     </section>
   </main>
@@ -83,6 +91,8 @@
       <p>Copyright © 2023 Charlotte</p>
     </div>
   </footer>
+
+  <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
