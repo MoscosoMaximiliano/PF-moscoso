@@ -14,17 +14,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
-    margin: 0 10% 0 10%;
     font-family: "Pangolin";
     background-color: var(--secondary);
     height: 100%;
 }
 
+body {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
-    height: 80vh;
+    margin: 0 10% 10% 10%;
     color: var(--primary);
     justify-content: center;
     position: relative;
@@ -36,12 +44,7 @@ header {
 }
 
 a {
-    text-decoration: none !important;
     color: var(--secondary);
-}
-
-li {
-    list-style: none;
 }
 
 .rounded {
@@ -77,21 +80,24 @@ header nav ul li {
 /*---------------------- FOOTER ----------------------*/
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
     background-color: var(--secondary-button);
     color: var(--secondary);
 }
 
-footer div{
-    margin: 0px 100px;
+footer div ul {
+    display: flex;
+    justify-content: center;
 }
 
 .social-media-logo {
     fill: var(--secondary);
     width: 35px;
-    height: 36px;
-    padding: 2px 2px;
+    height: auto;
+    margin: 0 10px 0 10px;
 }
