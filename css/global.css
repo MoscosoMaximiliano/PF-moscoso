@@ -97,13 +97,14 @@ nav {
 .hamburger {
     display: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .bar {
     height: 5px;
     width: 35px;
     border-radius: 25px;
-    background: var(--accent);
+    background: var(--secondary-button);
     margin: 5px 15px;
     opacity: .8;
     transition: all .5s ease-in-out;
@@ -122,7 +123,7 @@ nav {
 }
 
 .hamburger-open .bar:nth-child(2){
-    display: none;
+    opacity: 0;
 }
 
 .hamburger-open .bar:nth-child(3){
@@ -163,18 +164,24 @@ footer div ul {
 @media (max-width: 650px) {
     nav {
         position: fixed;
-        top: 60px;
+        top: 0;
         left: 0px;
         background: var(--primary-button);
         width: 100%;
-        padding: 10px 0 25px;
+        height: 100%;
+        padding: 80px 0 25px;
         transform: translateX(-100%);
     }
 
     .nav-container {
         flex-direction: column;
         align-items: center;
-        row-gap: 20px;
+        row-gap: 50px;
+    }
+
+    .nav-item {
+        width: 50%;
+        text-align: center;
     }
 
     .hamburger {

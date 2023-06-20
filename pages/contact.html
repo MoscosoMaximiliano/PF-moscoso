@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/contact.css">
   <title>Panaderia Charlotte</title>
 </head>
 
@@ -42,20 +43,20 @@
 
   <main>
     <section>
-      <form class="center text rounded" method="post">
+      <form class="rounded" method="post">
         <label for="nombre">Name:</label>
-        <input class="rounded text-center" type="text" id="nombre" name="nombre" required>
+        <input class="rounded" type="text" id="nombre" name="nombre" required>
         <label for="email">Email:</label>
-        <input class="rounded text-center" type="email" id="email" name="email" required>
+        <input class="rounded" type="email" id="email" name="email" required>
         <legend></legend>
         <label for="product">Product:</label>
-        <select class="rounded text-center" id="product" name="product">
+        <select class="rounded" id="product" name="product">
           <option value="cake">Cake</option>
           <option value="bread">Bread</option>
           <option value="facturas">Facturas</option>
         </select>
         <label for="description">Description:</label>
-        <textarea rows="4" cols="50" class="rounded text-center" id="description" name="description"
+        <textarea rows="4" cols="50" class="rounded" id="description" name="description"
           required></textarea>
         <button class="rounded">Send!</button>
       </form>
@@ -96,6 +97,7 @@
     </div>
   </footer>
 
+  <script src="../scripts/hamburger.js"></script>
 </body>
 
 </html>
