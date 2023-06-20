@@ -27,3 +27,7 @@
 .rectangle-data-trajectory p {
     width: 95%;
 }
+
+@media (max-width: 650px) {
+    
+}
