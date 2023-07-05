@@ -1,8 +1,13 @@
-/* ---------------------- PRODUCTS PAGE ----------------------
+/*---------------------- PRODUCTS PAGE ----------------------*/
 .products-section {
     display: grid;
+    margin: 0 2rem;
     grid-template-columns: repeat(4, 1fr); 
     justify-items: center;
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .card {
@@ -15,13 +20,13 @@
     border-radius: 25px;
     margin: 15px;
     padding: 25px;
-    background-color: var(--secondary-button);
-    color: var(--secondary);
+    background-color: $secondary-button;
+    color: $secondary;
     transition: .7s;
-}
 
-.card:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .card-img {
@@ -37,11 +42,4 @@
 }
 
 
-@media (max-width: 650px) {
-    .products-section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
-
- */

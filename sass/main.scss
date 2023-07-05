@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+@import 'abstracts/fadeIn';
+
+@import 'base/reset';
+@import 'base/base';
+
+@import 'layout/footer';
+@import 'layout/navbar';
+
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/location';
+@import 'pages/products';
+@import 'pages/trajectory';

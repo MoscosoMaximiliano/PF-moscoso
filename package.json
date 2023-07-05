@@ -1,0 +1,24 @@
+{
+  "name": "preentrega2-moscoso",
+  "version": "1.0.0",
+  "description": "La idea principal es realizar una página web de una panadería donde se muestre no solo los productos de la misma, sino el desarrollo y la posibilidad de contar como forma de contacto para llegar de manera mas rápida a ella sin necesidad de ir presencial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch ./sass/main.scss:./css/sassStyle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoscosoMaximiliano/preentrega2-moscoso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoscosoMaximiliano/preentrega2-moscoso/issues"
+  },
+  "homepage": "https://github.com/MoscosoMaximiliano/preentrega2-moscoso#readme",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}
