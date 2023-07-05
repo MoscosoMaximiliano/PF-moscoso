@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 :root {
     --primary: #fe875b;
@@ -6,11 +6,11 @@
     --primary-button: #75201b;
     --secondary-button: #ff9567;
     --accent: #ab432b;
-}
+} */
 
 /*---------------------- GENERAL ----------------------*/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,12 +64,12 @@ button {
     font-size: 32px;
     padding: 10px;
     transition: .7s;
-}
+} */
 
 
 /*---------------------- NAVBAR ----------------------*/
 
-nav {
+/* nav {
     margin: 15px 0;
     width: 100%;
     transition: all .3s ease-in-out;
@@ -154,14 +154,14 @@ footer div ul {
     width: 35px;
     height: auto;
     margin: 10px 10px 0 10px;
-}
+} */
 
 
 
 
 /* MEDIA PHONE */
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     nav {
         position: fixed;
         top: 0;
@@ -191,4 +191,4 @@ footer div ul {
     footer {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */

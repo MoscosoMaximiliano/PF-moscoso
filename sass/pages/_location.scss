@@ -1,0 +1,44 @@
+/*---------------------- LOCATION PAGE ----------------------*/
+
+.location-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 7rem;
+
+    @include mobile {
+        padding-top: 5rem;
+    }
+
+    iframe {
+        @extend .rounded;
+        
+        padding: 5rem;
+
+        @include mobile {
+            padding: 0;
+            width: 80%;
+            height: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.location-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+
+    button {
+        width: 50%;
+    }
+}

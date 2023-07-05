@@ -1,0 +1,29 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: $secondary-button;
+    color: $secondary;
+
+    div {
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.social-media-logo {
+    fill: $secondary;
+    width: 35px;
+    height: auto;
+    margin: 10px 10px 0 10px;
+}
+

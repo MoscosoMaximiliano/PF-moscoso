@@ -1,0 +1,55 @@
+html {
+    font-family: "Pangolin";
+    background-color: $secondary;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+main {
+    color: $primary;
+    justify-content: center;
+    position: relative;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+}
+
+a {
+    color: $secondary;
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+button {
+    @extend .rounded;
+
+    font-family: "Pangolin";
+    border: none;
+    background-color: $secondary-button;
+    color: $accent;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 10px;
+    transition: .7s;
+}
+
+@mixin mobile {
+    @media (max-width: 650px) {
+        @content;
+    }
+} 

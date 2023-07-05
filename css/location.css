@@ -1,4 +1,4 @@
-/*---------------------- LOCATION PAGE ----------------------*/
+/* ---------------------- LOCATION PAGE ----------------------
 
 .location-section {
     display: flex;
@@ -30,4 +30,4 @@
     .location-section {
         flex-direction: column;
     }
-}
+} */
