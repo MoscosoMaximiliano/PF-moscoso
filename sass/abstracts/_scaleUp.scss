@@ -1,0 +1,3 @@
+@mixin scaleUp ($desireScale: 1.1) {
+    transform: scale($desireScale);
+}

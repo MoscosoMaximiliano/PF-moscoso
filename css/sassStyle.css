@@ -20,6 +20,7 @@ html {
   font-family: "Pangolin";
   background-color: #feebda;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -190,6 +191,16 @@ button:hover {
 
 .home-section {
   width: 100%;
+  padding: 100px 0 0 0;
+}
+.home-section #bg-video {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  filter: brightness(35%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 .home-section div {
   width: 100%;
@@ -354,6 +365,10 @@ form button {
   justify-content: center;
   color: #feebda;
   align-items: center;
+  transition: 2s;
+}
+.container-trajectory:hover {
+  transform: scale(1.1);
 }
 
 .circle-date-trajectory {
