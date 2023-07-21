@@ -1,4 +1,4 @@
-# Pre entrega del curso Desarrollo Web de CoderHouse
+# Entrega Final del curso Desarrollo Web de CoderHouse
 
 ## Autor: Moscoso Maximiliano
 
