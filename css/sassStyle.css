@@ -49,7 +49,7 @@ a {
   color: #feebda;
 }
 
-.rounded, .rectangle-data-trajectory, .location-section iframe, form, input, textarea, select, .nav-item, button {
+.rounded, .rectangle-data-trajectory, .location-section iframe, form input, form textarea, form select, form, .nav-item, button {
   border-radius: 25px;
 }
 
@@ -63,6 +63,34 @@ button {
   font-size: 32px;
   padding: 10px;
   transition: 0.7s;
+}
+
+.icon {
+  position: absolute;
+  top: 0px;
+}
+@media (max-width: 425px) {
+  .icon {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .icon {
+    top: -1px;
+  }
+}
+
+.icon-bread {
+  position: relative;
+  border-radius: 50px;
+  background: #ab432b;
+  padding: 2px;
+  width: 100%;
+  color: #feebda;
+  text-align: center;
+  box-shadow: 0 0 9px #75201b;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 footer {
@@ -79,7 +107,7 @@ footer div ul {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   footer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -97,7 +125,7 @@ nav {
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   nav {
     position: fixed;
     top: 0;
@@ -116,6 +144,11 @@ nav {
   justify-content: space-between;
   background-color: #feebda;
 }
+@media (max-width: 425px) {
+  .header-content {
+    background-color: transparent;
+  }
+}
 
 .nav-container {
   display: flex;
@@ -125,7 +158,7 @@ nav {
   width: auto;
   margin: 0 15px;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .nav-container {
     flex-direction: column;
     align-items: center;
@@ -141,7 +174,7 @@ nav {
 .nav-item:hover {
   background-color: #fe875b;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .nav-item {
     text-align: center;
   }
@@ -152,7 +185,7 @@ nav {
   cursor: pointer;
   margin-top: 20px;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .hamburger {
     display: block;
   }
@@ -198,8 +231,8 @@ button:hover {
   bottom: 0;
   right: 0;
   filter: brightness(35%);
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 80%;
+  min-height: 80%;
   z-index: -1;
 }
 .home-section div {
@@ -213,10 +246,15 @@ button:hover {
   width: 20%;
   margin-top: 5rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .home-section div button {
     margin-top: 0px;
-    width: 50%;
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .home-section div button {
+    width: 60%;
   }
 }
 .home-section h1 {
@@ -231,9 +269,35 @@ button:hover {
   margin: 5rem 1rem;
   text-align: center;
 }
+@media (max-width: 425px) {
+  .home-section p {
+    margin-top: 25px;
+  }
+}
 
-input, textarea, select {
-  width: 100%;
+#contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fe875b;
+  color: #feebda;
+}
+@media (min-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+form input, form textarea, form select {
+  width: 80%;
   padding: 15px;
   border: none;
   margin: 15px 0 25px 0;
@@ -244,27 +308,12 @@ input, textarea, select {
   color: #feebda;
   background-color: #ab432b;
 }
-
-section {
-  display: flex;
-  justify-content: center;
-}
-
-form {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #fe875b;
-  color: #feebda;
-}
 form button {
+  width: 60%;
   background-color: #75201b;
   color: #feebda;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   form {
     width: auto;
   }
@@ -279,7 +328,7 @@ form button {
   height: 100%;
   padding-top: 7rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .location-section {
     padding-top: 5rem;
   }
@@ -287,7 +336,7 @@ form button {
 .location-section iframe {
   padding: 5rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .location-section iframe {
     padding: 0;
     width: 80%;
@@ -295,7 +344,7 @@ form button {
     margin-top: 3rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .location-section {
     flex-direction: column;
   }
@@ -312,6 +361,15 @@ form button {
 .location-data button {
   width: 50%;
 }
+@media (min-width: 768px) {
+  .location-data button {
+    width: 80%;
+  }
+}
+
+.location-description {
+  margin: 20px 0 20px 0;
+}
 
 /*---------------------- PRODUCTS PAGE ----------------------*/
 .products-section {
@@ -320,9 +378,14 @@ form button {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
-@media (max-width: 650px) {
+@media (max-width: 425px) {
   .products-section {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .products-section {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -346,9 +409,15 @@ form button {
 
 .card-img {
   margin: 0 0 15px 0;
-  height: auto;
+  height: 80px;
   width: 80px;
   border-radius: 999999px;
+}
+@media (max-width: 425px) {
+  .card-img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .card-title {
@@ -356,7 +425,29 @@ form button {
   margin: 10px;
 }
 
+.card-description {
+  word-wrap: wrap;
+  text-align: center;
+}
+
+.card-price {
+  margin: 10px 0 10px 0;
+}
+
+.card-button {
+  font-size: 1rem;
+  margin-top: 10px;
+  background-color: #feebda;
+}
+
 /* ---------------------- TRAJECTORY PAGE ----------------------*/
+.trajectory-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
 .container-trajectory {
   display: flex;
   margin: 50px;
@@ -370,19 +461,29 @@ form button {
 .container-trajectory:hover {
   transform: scale(1.1);
 }
+@media (max-width: 425px) {
+  .container-trajectory {
+    margin: 0;
+    justify-content: center;
+  }
+}
+.container-trajectory.inverted {
+  flex-direction: row-reverse !important;
+}
 
 .circle-date-trajectory {
   display: flex;
+  padding: 10px;
   align-items: center;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 25%;
   background-color: #fe875b;
 }
-
 .circle-date-trajectory h4 {
   width: 100%;
   text-align: center;
+  align-self: center;
 }
 
 .rectangle-data-trajectory {
@@ -392,6 +493,12 @@ form button {
   margin: 0 12px;
   background-color: #fe875b;
   text-align: center;
+  word-wrap: wrap;
+}
+@media (max-width: 425px) {
+  .rectangle-data-trajectory {
+    margin: 0 6px;
+  }
 }
 
 /*# sourceMappingURL=sassStyle.css.map */

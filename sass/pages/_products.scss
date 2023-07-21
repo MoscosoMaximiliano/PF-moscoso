@@ -8,6 +8,10 @@
     @include mobile {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .card {
@@ -31,14 +35,34 @@
 
 .card-img {
     margin: 0 0 15px 0;
-    height: auto;
+    height: 80px;
     width: 80px;
-    border-radius: 999999px; 
+    border-radius: 999999px;
+    
+    @include mobile {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .card-title {
     font-size: 2rem;
     margin: 10px;
+}
+
+.card-description {
+    word-wrap: wrap;
+    text-align: center;
+}
+
+.card-price {
+    margin: 10px 0 10px 0;
+}
+
+.card-button {
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: $secondary;
 }
 
 

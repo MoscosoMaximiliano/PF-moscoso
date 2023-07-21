@@ -1,5 +1,12 @@
 /* ---------------------- TRAJECTORY PAGE ----------------------*/
 
+.trajectory-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
 .container-trajectory {
     display: flex;
     margin: 50px;
@@ -13,20 +20,31 @@
     &:hover {
         @include scaleUp(1.1)
     }
+
+    @include mobile {
+        margin: 0;
+        justify-content: center;
+    }
+
+    &.inverted {
+        flex-direction: row-reverse !important;
+    }
 }
 
 .circle-date-trajectory {
     display: flex;
+    padding: 10px;
     align-items: center;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: $primary;
-}
 
-.circle-date-trajectory h4 {
-    width: 100%;
-    text-align: center;
+    h4 {
+        width: 100%;
+        text-align: center;
+        align-self: center
+    }
 }
 
 .rectangle-data-trajectory {
@@ -38,4 +56,10 @@
     margin: 0 12px;
     background-color: $primary;
     text-align: center;
+
+    word-wrap: wrap;
+
+    @include mobile {
+        margin: 0 6px;
+    }
 }
