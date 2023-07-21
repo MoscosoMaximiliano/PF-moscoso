@@ -20,6 +20,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: $secondary;
+
+    @include mobile {
+        background-color: transparent;
+    }
 }
 
 .nav-container{

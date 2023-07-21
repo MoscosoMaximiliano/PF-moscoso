@@ -49,8 +49,40 @@ button {
     transition: .7s;
 }
 
+.icon {
+    position: absolute;
+    top: 0px;
+
+    @media (max-width: 425px){
+        display: none;
+    }
+
+    @media (max-width: 768px){
+        top: -1px;
+    }
+}
+
+.icon-bread {
+    position: relative;
+    border-radius: 50px;
+    background: $accent;
+    padding: 2px;
+    width: 100%;
+    color: $secondary;
+    text-align: center;
+    box-shadow: 0 0 9px $primary-button;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 @mixin mobile {
-    @media (max-width: 650px) {
+    @media (max-width: 425px) {
         @content;
     }
 } 
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
